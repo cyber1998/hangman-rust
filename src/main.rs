@@ -1,6 +1,5 @@
-use std::io::Read;
-
 use rand::prelude::*;
+
 fn main() {
     // Set the word to guess
     let word: &str = "cyber";
@@ -26,7 +25,7 @@ fn main() {
     let mut remaining_attempts = 3;
     println!("Try to guess this word: {}" , word);
     println!("Type the first character and then move on to the next!");
-    
+
     for idx in empty_indices {
         if remaining_attempts == 0 {
             println!("You lost!. Try again.");
